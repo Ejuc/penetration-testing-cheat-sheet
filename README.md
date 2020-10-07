@@ -976,6 +976,8 @@ Dictionary attack:
 
 ```fundamental
 hashcat -m 100 -a 0 --session=cracking --force --status --optimized-kernel-enable B1B3773A05C0ED0176787A4F1574FF0075F7521E rockyou.txt
+
+hashcat -m 5600 -a 0 --session=cracking --force --status --optimized-kernel-enable hashes.txt --outfile hashcat_results.txt rockyou.txt
 ```
 
 You can find `rockyou.txt` wordlist located at `/usr/share/wordlists/` directory or download it from [/dict/rockyou.zip](https://github.com/ivan-sincek/penetration-testing-cheat-sheet/blob/master/dict).
